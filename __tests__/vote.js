@@ -46,7 +46,7 @@ describe("Voting application test suite", function () {
       firstName: "sai",
       lastName: "samba",
       email: "sai@test.com",
-      password: "1234567890",
+      password: "000000",
       _csrf: csrfToken,
     });
     expect(res.statusCode).toBe(302);
