@@ -45,7 +45,7 @@ describe("Voting application test suite", function () {
     res = await agent.post("/admin").send({
       firstName: "sai",
       lastName: "samba",
-      email: "samuel@test.com",
+      email: "sai@test.com",
       password: "1234567890",
       _csrf: csrfToken,
     });
