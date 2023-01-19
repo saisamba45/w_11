@@ -43,7 +43,7 @@ describe("Voting application test suite", function () {
     res = await agent.get("/signup");
     const csrfToken = extractCsrfToken(res);
     res = await agent.post("/admin").send({
-      firstName: "Muppasari Samuel",
+      firstName: "sai",
       lastName: "Cyril Raj",
       email: "samuel@test.com",
       password: "1234567890",
