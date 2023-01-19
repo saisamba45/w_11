@@ -55,7 +55,7 @@ describe("Voting application test suite", function () {
   test("User login", async () => {
     res = await agent.get("/electionpage");
     expect(res.statusCode).toBe(200);
-    await login(agent, "samuel@test.com", "1234567890");
+    await login(agent, "sai@test.com", "000000");
     res = await agent.get("/electionpage");
     expect(res.statusCode).toBe(200);
   });
@@ -71,7 +71,7 @@ describe("Voting application test suite", function () {
 
   test("Creating election", async () => {
     const agent = request.agent(server);
-    await login(agent, "samuel@test.com", "1234567890");
+    await login(agent, "sai@test.com", "000000");
     const res = await agent.get("/electionpage/addelection");
     const csrfToken = extractCsrfToken(res);
     const response = await agent.post("/electionpage").send({
